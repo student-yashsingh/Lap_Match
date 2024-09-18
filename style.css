@@ -1,0 +1,317 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    width: 100%;
+}
+
+/* Container for full-width layout */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Dark Blue Accent Color */
+:root {
+    --primary-color: #2c3e50; /* Dark blue */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    padding: 15px 0;
+}
+
+nav h1 {
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.navbar {
+    float: right;
+    list-style: none;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 5px 10px;
+}
+
+.navbar a:hover {
+    background-color: var(--primary-color); /* Hover effect with dark blue */
+    border-radius: 5px;
+}
+
+/* Header Section */
+header {
+    background-image: url('https://via.placeholder.com/1200x400');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    padding: 150px 0;
+    text-align: center;
+}
+
+.header-container h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.header-container p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: black;
+}
+
+/* Keep the "Start Comparing" button green */
+.cta-button {
+    background-color: #62ba46; /* Green */
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #459a32; /* Darker green */
+}
+
+/* Feature Highlights Section */
+.features {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.feature-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid var(--primary-color); /* Dark blue border */
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.feature-card p {
+    font-size: 1em;
+    color: black;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: var(--primary-color); /* Dark blue heading */
+}
+
+.why-choose-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.choose-card {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.choose-card:hover {
+    transform: scale(1.05);
+}
+
+.choose-card i {
+    font-size: 2.5em;
+    color: var(--primary-color); /* Dark blue icon */
+    margin-bottom: 15px;
+}
+
+.choose-card h3 {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.choose-card p {
+    color: black;
+}
+
+/* Comparison Table */
+.comparison {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+.comparison h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+table th, table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table th {
+    background-color: var(--primary-color); /* Dark blue table header */
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: var(--primary-color); /* Dark blue heading */
+}
+
+.testimonial-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.testimonial-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card p {
+    font-size: 1.2em;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.testimonial-card h4 {
+    font-size: 1.1em;
+    color: var(--primary-color); /* Dark blue name */
+}
+
+/* Login Section */
+.login-section {
+    padding: 50px 0;
+    background-color: #f4f4f9;
+    text-align: center;
+}
+
+.login-section h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: black;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-btn {
+    background-color: var(--primary-color); /* Dark blue login button */
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #1c2833; /* Darker blue */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
